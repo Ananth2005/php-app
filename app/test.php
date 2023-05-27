@@ -1,8 +1,6 @@
 <pre>
     <?php
-    $cookie_name = "testscript";
-    $cookie_value = $_SERVER['REQUEST-URI'];
-    setcookie($cookie_name, $cookie_value, time() + (86400 + 30), "/");
+
     print("_SERVER \n");
     print_r($_SERVER);
     print("_GET \n");

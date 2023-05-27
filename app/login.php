@@ -1,11 +1,11 @@
 <?php
 
 include 'libs/load.php';
-
 ?>
 
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+
+<html lang="en">
 
 <head>
 
@@ -14,10 +14,12 @@ include 'libs/load.php';
 	<meta name="description" content="">
 	<meta name="author" content="Selfmade Ninja Academy">
 	<meta name="generator" content="Hugo 0.111.3">
-	<title>Photogram by ananth</title>
+	<title>login to Photogram</title>
 
 
 	<link href="/fxlabs/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/fxlabs/hover.css" rel="stylesheet">
 
 	<style>
 		.bd-placeholder-img {
@@ -28,11 +30,7 @@ include 'libs/load.php';
 			user-select: none;
 		}
 
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-				font-size: 3.5rem;
-			}
-		}
+
 
 		.b-example-divider {
 			width: 100%;
@@ -91,10 +89,33 @@ include 'libs/load.php';
 		.bd-mode-toggle {
 			z-index: 1500;
 		}
+
+
+		.form-signin {
+			max-width: 330px;
+			padding: 15px;
+		}
+
+		.form-signin .form-floating:focus-within {
+			z-index: 2;
+		}
+
+		.form-signin input[type="email"] {
+			margin-bottom: -1px;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.form-signin input[type="password"] {
+			margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
 	</style>
 
 
 </head>
+
 
 <body>
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -194,12 +215,7 @@ include 'libs/load.php';
 	</header>
 
 	<main>
-
-		<?load_template('_calltoaction');?>
-
-		<?load_template('_photogram');?>
-
-		<?load_template('_login.php');?>
+		<?load_template('_login');?>
 
 	</main>
 
@@ -207,6 +223,7 @@ include 'libs/load.php';
 
 
 	<script src="/fxlabs/app/assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 </body>
