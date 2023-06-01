@@ -1,30 +1,6 @@
-<?php
-$username = $_POST['email_address'];
-$password = $_POST['password'];
-
-$result = validate_credentials($username, $password);
-
-if ($result) {
-    ?>
-<main class="container">
-	<div class="bg-body-tertiary p-5 rounded mt-3">
-		<h1>login success</h1>
-		<p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
-		<a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
-	</div>
-</main>
-<?php
-} else {
-    ?>
-<main class="form-signin w-100 m-auto">
+<main class="form-signup w-100 m-auto">
 	<form method="post" action="login.php">
-	
-	<div class="circles">
-    <div></div>
-    <div></div>
-    <div></div>
-    <span></span>
-  </div>
+
 
 		<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -47,6 +23,3 @@ if ($result) {
 
 	</form>
 </main>
-<?php
-}
-?>
