@@ -45,7 +45,6 @@
 <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="./script.js"></script>
 
 </body>
-</html>
 
 
 <style>
@@ -143,8 +142,6 @@
       transform: rotateZ(calc(360deg / 3 * 3)) rotateX(66deg) rotateZ(360deg);
     }
   }
-</style>
-
 </style>
 
 <script>
@@ -459,3 +456,12 @@
     bloomPass.setSize(window.innerWidth, window.innerHeight);
   }
 </script>    
+</html>
+<body>
+  <main>
+  
+<?load_template('_click');?>
+
+</main>
+</body>
+
